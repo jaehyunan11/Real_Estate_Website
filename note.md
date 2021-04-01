@@ -94,6 +94,18 @@ python manage.py collectstatic
         'USER': 'postgres', (username)
         'PASSWORD': 'password', (password that you set up when you create DB)
         'HOST': 'localhost',
-        'PORT': '5430'
+        'PORT': '5420' (set to PORT number that you set)
     }
 }
+
+
+## Migration in Django
+- python manage.py mirgate
+ -> check in PgADmin 
+ -> schemas and Tables
+ -> All the table from Django is now updated in the server
+
+
+ ## Imagefield -> Pillow 
+ pip install Pillow
+ (In order to use imagefield, please install pillow)
