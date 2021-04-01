@@ -1,23 +1,26 @@
-# Virtual Env
+## Virtual Env
 (Create) python3 -m venv ./venv
 (Activate) source bin/activate
 
-# Django Installation
+## Django Installation
 pip install Django==2.2
 
-# Django Help
+## pylint-django
+Ensure pylint-django is installed and on your path. In order to access some of the internal Django features to improve pylint inspections, you should also provide a Django settings module appropriate to your project. This can be done either with an environment variable:
+
+## Django Help
 django-admin help
 
-# Django Create Project
+## Django Create Project
 django-admin startproject [project name]
 
-# Django App Create
+## Django App Create
 python manage.py startapp [app name]
 
-# Find gitignore
+## Find gitignore
 https://www.toptal.com/developers/gitignore
 
-# Git
+## Git
 git init (Go to folder before git init)
 git remote add origin [git address]
 git branch -M main (create main branch)
@@ -25,10 +28,10 @@ git add .
 git commit -m "update"
 git push -u origin [branch name]
 
-# Create secrets and secure secret keys
-# Debug True (Dev) Debug False (Prod)
+## Create secrets and secure secret keys
+## Debug True (Dev) Debug False (Prod)
 
-# Setup interpretor and locate to venv that you created
+## Setup interpretor and locate to venv that you created
 "python.pythonPath": "/Users/jaehyunan/desktop/JH_Portfolio/real_estate_project/venv/bin/python"
 
 
@@ -145,3 +148,4 @@ class ListingAdmin(admin.ModelAdmin):
     list_display_links = ('id', 'title')
     list_filter = ('realtor',)
     list_editable = ('is_published',)
+
