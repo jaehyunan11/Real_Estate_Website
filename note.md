@@ -98,6 +98,11 @@ python manage.py collectstatic
     }
 }
 
+## MakeMigration in Django
+
+- python manage.py makemigration
+- python manage.py sqlmigrate listings [migration num] e.g.[0001] -> to check in sql format 
+
 
 ## Migration in Django
 - python manage.py mirgate
@@ -106,6 +111,26 @@ python manage.py collectstatic
  -> All the table from Django is now updated in the server
 
 
+
  ## Imagefield -> Pillow 
  pip install Pillow
  (In order to use imagefield, please install pillow)
+
+
+ ## Admin SuperUser
+ - python manage.py createsuperuser
+
+ ## Media Folder Settings
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
+- update in settings
+
+from django.config import settings
+from django.conf.urls.static import static
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('pages.urls')),
+    path('listings/', include('listings.urls')),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
