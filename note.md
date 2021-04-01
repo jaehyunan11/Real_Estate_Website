@@ -62,3 +62,38 @@ python manage.py collectstatic
     <h1>About</h1>
 {% endblock%}
 
+
+
+## POSTGREAPP (Server )
+
+- Go to Postgressapp.com to download postgres app for Mac user.
+- Go to postgress.com and download for window user
+- Open and Post gregres and initiaze 
+ -> Enter postgres
+ -> \password postgres
+ -> enter password
+ -> CREATE DATABASE [db name] OWNER [owner name]
+ -> \l ( check make sure database is created)
+
+## pgAdmin (GUX server)
+
+- Set up server
+ -> Create sever
+ -> Insert server name
+ -> Go to connection and add host name/post/password that you setup from POSTGRE
+- server properties
+ -> Go to security and select all for privileges postgres 
+
+
+ ## Change DB in settings
+
+ DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'jhrealwebsite', (serveranme)
+        'USER': 'postgres', (username)
+        'PASSWORD': 'password', (password that you set up when you create DB)
+        'HOST': 'localhost',
+        'PORT': '5430'
+    }
+}
