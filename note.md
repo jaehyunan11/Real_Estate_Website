@@ -134,3 +134,14 @@ urlpatterns = [
     path('', include('pages.urls')),
     path('listings/', include('listings.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+## Admin Display Customization
+ - go to admin.py
+
+class ListingAdmin(admin.ModelAdmin):
+    list_display = ('id', 'title', 'is_published',
+                    'price', 'list_date', 'realtor')
+    list_display_links = ('id', 'title')
+    list_filter = ('realtor',)
+    list_editable = ('is_published',)
