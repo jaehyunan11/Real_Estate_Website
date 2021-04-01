@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-from .secrets import secret_key
+from .secrets import secret_key, db_password
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -82,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'jhrealwebsite',
         'USER': 'postgres',
-        'PASSWORD': 'jaeHYUN^^48625',
+        'PASSWORD': db_password,
         'HOST': 'localhost',
         'PORT': '5430'
     }
