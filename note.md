@@ -55,6 +55,13 @@ STATICFILES_DIRS = [
 python manage.py collectstatic 
 - Put in the .gitignore not to push to github
 
+
+- Use humanize in installed Apps
+https://docs.djangoproject.com/en/3.1/ref/contrib/humanize/
+'django.contrib.humanize',
+-> and use in the html {% load humanize %}
+-> e.g. ${{ listing.price | intcomma }} $530000 -> $530,000
+
 ## DJANGO TEMPLATES
 
 - create base html
@@ -149,3 +156,6 @@ class ListingAdmin(admin.ModelAdmin):
     list_filter = ('realtor',)
     list_editable = ('is_published',)
 
+## Pagination
+https://docs.djangoproject.com/en/3.1/topics/pagination/
+from django.core.paginator import Paginator
