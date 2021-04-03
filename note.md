@@ -159,3 +159,14 @@ class ListingAdmin(admin.ModelAdmin):
 ## Pagination
 https://docs.djangoproject.com/en/3.1/topics/pagination/
 from django.core.paginator import Paginator
+
+## Django Message 
+
+https://docs.djangoproject.com/en/3.1/ref/contrib/messages/
+
+- set the message_tag in the Django settings 
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+    messages.INFO: '',
+    50: 'critical',
+}
