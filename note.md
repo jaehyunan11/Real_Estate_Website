@@ -170,3 +170,18 @@ MESSAGE_TAGS = {
     messages.INFO: '',
     50: 'critical',
 }
+
+## Django Email
+
+https://docs.djangoproject.com/en/3.1/topics/email/
+
+- Setting:
+# Email config
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = True
+
+- When sending email to gmail, please change the settings
+https://myaccount.google.com/u/1/lesssecureapps?pli=1&rapt=AEjHL4MLoccOHelZlAcfLLkIqhGWzj3XVnr718QQcZUvjSBho5KRIHIfIjc3Fgyc01iExfPMuftKBcsRAF_Lwl1pt4gTY2vh7g
