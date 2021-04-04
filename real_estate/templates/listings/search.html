@@ -59,7 +59,7 @@
                             </select>
                         </div>
                     </div>
-                    <button class="btn btn-secondary btn-block mt-4" type="submit">Submit form</button>
+                    <button class="btn btn-secondary btn-block mt-4" type="submit">Search</button>
                 </form>
             </div>
         </div>
@@ -72,11 +72,11 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                    <a href="index.html">
+                    <a href="{% url 'index' %}">
                         <i class="fas fa-home"></i> Home</a>
                 </li>
                 <li class="breadcrumb-item">
-                    <a href="listings.html">Browse Listings</a>
+                    <a href="{% url 'listings' %}">Browse Listings</a>
                 </li>
                 <li class="breadcrumb-item active"> Search Results</li>
             </ol>
