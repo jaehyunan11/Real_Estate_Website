@@ -75,7 +75,7 @@ https://docs.djangoproject.com/en/3.1/ref/contrib/humanize/
 
 - reuse base html
 {% extends 'base.html' %} {% block content %}
-    <h1>About</h1>
+
 {% endblock%}
 
 
@@ -101,7 +101,7 @@ https://docs.djangoproject.com/en/3.1/ref/contrib/humanize/
  -> Go to security and select all for privileges postgres 
 
 
- ## Change DB in settings
+## Change DB in settings
 
  DATABASES = {
     'default': {
@@ -128,15 +128,15 @@ https://docs.djangoproject.com/en/3.1/ref/contrib/humanize/
 
 
 
- ## Imagefield -> Pillow 
+## Imagefield -> Pillow 
  pip install Pillow
  (In order to use imagefield, please install pillow)
 
 
- ## Admin SuperUser
+## Admin SuperUser
  - python manage.py createsuperuser
 
- ## Media Folder Settings
+## Media Folder Settings
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
@@ -182,7 +182,7 @@ MESSAGE_TAGS = {
 https://docs.djangoproject.com/en/3.1/topics/email/
 
 - Setting:
-# Email config
+## Email config
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = ''
